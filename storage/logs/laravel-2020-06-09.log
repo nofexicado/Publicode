@@ -1,0 +1,1436 @@
+[2020-06-09 05:44:01] local.ERROR: Undefined variable: order_details (View: D:\xampp\htdocs\zigkart\resources\views\conversation.blade.php) {"userId":7,"exception":"[object] (ErrorException(code: 0): Undefined variable: order_details (View: D:\\xampp\\htdocs\\zigkart\esources\\views\\conversation.blade.php) at D:\\xampp\\htdocs\\zigkart\\storage\\framework\\views\\85a7ef73254c7056648606155d2a90d119a6b8b4.php:87, ErrorException(code: 0): Undefined variable: order_details at D:\\xampp\\htdocs\\zigkart\\storage\\framework\\views\\85a7ef73254c7056648606155d2a90d119a6b8b4.php:87)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
+#2 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(142): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
+#3 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(125): Illuminate\\View\\View->getContents()
+#4 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(90): Illuminate\\View\\View->renderContents()
+#5 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(42): Illuminate\\View\\View->render()
+#6 D:\\xampp\\htdocs\\zigkart\\vendor\\symfony\\http-foundation\\Response.php(205): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(720): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\XSS.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\XSS->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\Localization.php(22): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\Localization->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(43): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#41 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#42 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#44 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\\zigkart\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\CheckReferral.php(20): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\CheckReferral->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#61 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#64 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#65 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#66 D:\\xampp\\htdocs\\zigkart\\index.php(54): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#67 {main}
+"} 
+[2020-06-09 05:44:46] local.ERROR: Undefined variable: product (View: D:\xampp\htdocs\zigkart\resources\views\conversation.blade.php) {"userId":7,"exception":"[object] (ErrorException(code: 0): Undefined variable: product (View: D:\\xampp\\htdocs\\zigkart\esources\\views\\conversation.blade.php) at D:\\xampp\\htdocs\\zigkart\\storage\\framework\\views\\85a7ef73254c7056648606155d2a90d119a6b8b4.php:88, ErrorException(code: 0): Undefined variable: product at D:\\xampp\\htdocs\\zigkart\\storage\\framework\\views\\85a7ef73254c7056648606155d2a90d119a6b8b4.php:88)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
+#2 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(142): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
+#3 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(125): Illuminate\\View\\View->getContents()
+#4 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(90): Illuminate\\View\\View->renderContents()
+#5 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(42): Illuminate\\View\\View->render()
+#6 D:\\xampp\\htdocs\\zigkart\\vendor\\symfony\\http-foundation\\Response.php(205): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(720): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\XSS.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\XSS->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\Localization.php(22): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\Localization->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(43): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#41 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#42 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#44 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\\zigkart\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\CheckReferral.php(20): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\CheckReferral->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#61 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#64 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#65 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#66 D:\\xampp\\htdocs\\zigkart\\index.php(54): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#67 {main}
+"} 
+[2020-06-09 05:51:00] local.DEBUG: Message-ID: <67fe20010fc46839f338b4552e5c5504@localhost>
+Date: Tue, 09 Jun 2020 05:51:00 +0000
+Subject: Conversation Message
+From: customer <customer@gmail.com>
+To: vendor <vendor@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> customer</p>   
+                        <p><strong> Email : </strong> customer@gmail.com</p>
+                        <p><strong> Message : </strong> hi</p>
+                        <p><strong> Order Id : 268</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation/customer/eyJpdiI6IktETk5cL0h4WHF2VnhBM256WFRkcnZBPT0iLCJ2YWx1ZSI6IkQ5blVSUm9TYXBrU0t3eVErczN3b0E9PSIsIm1hYyI6IjZhY2E1M2I0M2FjNmVjNjc3NjZhM2MwMTEzOTQxMjE2MjcyMjM0N2I1NmExNzE3NmYyZWFhN2I0N2Q5ZGUyNDEifQ==">http://localhost/zigkart/conversation/customer/eyJpdiI6IktETk5cL0h4WHF2VnhBM256WFRkcnZBPT0iLCJ2YWx1ZSI6IkQ5blVSUm9TYXBrU0t3eVErczN3b0E9PSIsIm1hYyI6IjZhY2E1M2I0M2FjNmVjNjc3NjZhM2MwMTEzOTQxMjE2MjcyMjM0N2I1NmExNzE3NmYyZWFhN2I0N2Q5ZGUyNDEifQ==</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 05:59:05] local.DEBUG: Message-ID: <1bb94fac5c14b08b563c7c226e33e9fe@localhost>
+Date: Tue, 09 Jun 2020 05:59:05 +0000
+Subject: Conversation Message
+From: customer <customer@gmail.com>
+To: vendor <vendor@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> customer</p>   
+                        <p><strong> Email : </strong> customer@gmail.com</p>
+                        <p><strong> Message : </strong> Hello how are you?</p>
+                        <p><strong> Order Id : 271</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation/customer/eyJpdiI6ImNSQVNBUFpHTXJha1Erd042cHdHelE9PSIsInZhbHVlIjoiZXpodHBaR05STGE4aVppNE8rZGJEZz09IiwibWFjIjoiM2FlNjRlYzRlOWM3MGYzZmFkZTFkZThiY2JkNzIyNGM4NTIwOWU3NjY4MTBmY2E4MDkwMDY5MmIzMjhmNTcwZCJ9">http://localhost/zigkart/conversation/customer/eyJpdiI6ImNSQVNBUFpHTXJha1Erd042cHdHelE9PSIsInZhbHVlIjoiZXpodHBaR05STGE4aVppNE8rZGJEZz09IiwibWFjIjoiM2FlNjRlYzRlOWM3MGYzZmFkZTFkZThiY2JkNzIyNGM4NTIwOWU3NjY4MTBmY2E4MDkwMDY5MmIzMjhmNTcwZCJ9</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 06:12:01] local.DEBUG: Message-ID: <80a32fbfa38a7d8d9064469aa55ba029@localhost>
+Date: Tue, 09 Jun 2020 06:12:01 +0000
+Subject: Conversation Message
+From: customer <customer@gmail.com>
+To: vendor <vendor@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> customer</p>   
+                        <p><strong> Email : </strong> customer@gmail.com</p>
+                        <p><strong> Message : </strong> hello</p>
+                        <p><strong> Order Id : 271</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation/customer/eyJpdiI6ImNSQVNBUFpHTXJha1Erd042cHdHelE9PSIsInZhbHVlIjoiZXpodHBaR05STGE4aVppNE8rZGJEZz09IiwibWFjIjoiM2FlNjRlYzRlOWM3MGYzZmFkZTFkZThiY2JkNzIyNGM4NTIwOWU3NjY4MTBmY2E4MDkwMDY5MmIzMjhmNTcwZCJ9">http://localhost/zigkart/conversation/customer/eyJpdiI6ImNSQVNBUFpHTXJha1Erd042cHdHelE9PSIsInZhbHVlIjoiZXpodHBaR05STGE4aVppNE8rZGJEZz09IiwibWFjIjoiM2FlNjRlYzRlOWM3MGYzZmFkZTFkZThiY2JkNzIyNGM4NTIwOWU3NjY4MTBmY2E4MDkwMDY5MmIzMjhmNTcwZCJ9</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 06:12:29] local.DEBUG: Message-ID: <0b74c1b8b81759f8be0b12857bd69d89@localhost>
+Date: Tue, 09 Jun 2020 06:12:29 +0000
+Subject: Conversation Message
+From: customer <customer@gmail.com>
+To: vendor <vendor@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> customer</p>   
+                        <p><strong> Email : </strong> customer@gmail.com</p>
+                        <p><strong> Message : </strong> Hello how are you?</p>
+                        <p><strong> Order Id : 271</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation/customer/eyJpdiI6ImNSQVNBUFpHTXJha1Erd042cHdHelE9PSIsInZhbHVlIjoiZXpodHBaR05STGE4aVppNE8rZGJEZz09IiwibWFjIjoiM2FlNjRlYzRlOWM3MGYzZmFkZTFkZThiY2JkNzIyNGM4NTIwOWU3NjY4MTBmY2E4MDkwMDY5MmIzMjhmNTcwZCJ9">http://localhost/zigkart/conversation/customer/eyJpdiI6ImNSQVNBUFpHTXJha1Erd042cHdHelE9PSIsInZhbHVlIjoiZXpodHBaR05STGE4aVppNE8rZGJEZz09IiwibWFjIjoiM2FlNjRlYzRlOWM3MGYzZmFkZTFkZThiY2JkNzIyNGM4NTIwOWU3NjY4MTBmY2E4MDkwMDY5MmIzMjhmNTcwZCJ9</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 06:30:58] local.ERROR: Undefined variable: encrypter (View: D:\xampp\htdocs\zigkart\resources\views\my-orders.blade.php) {"userId":8,"exception":"[object] (ErrorException(code: 0): Undefined variable: encrypter (View: D:\\xampp\\htdocs\\zigkart\esources\\views\\my-orders.blade.php) at D:\\xampp\\htdocs\\zigkart\\storage\\framework\\views\\eaf257337b6c6cd3f206a9a3be1f4f840e2a0980.php:91, ErrorException(code: 0): Undefined variable: encrypter at D:\\xampp\\htdocs\\zigkart\\storage\\framework\\views\\eaf257337b6c6cd3f206a9a3be1f4f840e2a0980.php:91)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
+#2 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(142): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
+#3 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(125): Illuminate\\View\\View->getContents()
+#4 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(90): Illuminate\\View\\View->renderContents()
+#5 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(42): Illuminate\\View\\View->render()
+#6 D:\\xampp\\htdocs\\zigkart\\vendor\\symfony\\http-foundation\\Response.php(205): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(748): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(720): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\XSS.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\XSS->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\Localization.php(22): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\Localization->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(43): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#41 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#42 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#44 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\\zigkart\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\CheckReferral.php(20): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\CheckReferral->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#61 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#64 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#65 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#66 D:\\xampp\\htdocs\\zigkart\\index.php(54): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#67 {main}
+"} 
+[2020-06-09 06:34:07] local.ERROR: Process could not be started [The system cannot find the path specified.
+] {"userId":8,"exception":"[object] (Swift_TransportException(code: 0): Process could not be started [The system cannot find the path specified.
+] at D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\StreamBuffer.php:302)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\StreamBuffer.php(54): Swift_Transport_StreamBuffer->establishProcessConnection()
+#1 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#2 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\SendmailTransport.php(50): Swift_Transport_AbstractSmtpTransport->start()
+#3 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mailer.php(65): Swift_Transport_SendmailTransport->start()
+#4 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(484): Swift_Mailer->send(Object(Swift_Message), Array)
+#5 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(259): Illuminate\\Mail\\Mailer->sendSwiftMessage(Object(Swift_Message))
+#6 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(239): Illuminate\\Mail\\Mailer->send('chat_mail', Array, Object(Closure))
+#7 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Controllers\\ProductController.php(72): Illuminate\\Support\\Facades\\Facade::__callStatic('send', Array)
+#8 [internal function]: ZigKart\\Http\\Controllers\\ProductController->conversation_message(Object(Illuminate\\Http\\Request))
+#9 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#10 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('conversation_me...', Array)
+#11 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(ZigKart\\Http\\Controllers\\ProductController), 'conversation_me...')
+#12 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
+#13 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
+#14 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\XSS.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\XSS->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\Localization.php(22): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\Localization->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(43): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#44 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#46 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#47 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\\zigkart\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\CheckReferral.php(20): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\CheckReferral->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#59 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#62 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#65 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#66 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#67 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#68 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#69 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#70 D:\\xampp\\htdocs\\zigkart\\index.php(54): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#71 {main}
+"} 
+[2020-06-09 06:34:47] local.DEBUG: Message-ID: <2935b3b989caf1f275ebc66cf39dc2f3@localhost>
+Date: Tue, 09 Jun 2020 06:34:47 +0000
+Subject: Conversation Message
+From: vendor <vendor@gmail.com>
+To: vendor <vendor@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> vendor</p>   
+                        <p><strong> Email : </strong> vendor@gmail.com</p>
+                        <p><strong> Message : </strong> i am fine</p>
+                        <p><strong> Order Id : 271</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation/vendor/eyJpdiI6IkltNUVMSHJlYmFPY1huYmNrYzdJTVE9PSIsInZhbHVlIjoieXo2STZrdUNnNzd6akl2OE9LSzZkUT09IiwibWFjIjoiYjhhNzYxYzFjODQ2OGU3ZDBjMmJlMDA0MzI1ZjI2MjBhYjY3NjcyM2VjZWUzZDM1NjJkYzE0YmIxNDYwNjk1ZSJ9">http://localhost/zigkart/conversation/vendor/eyJpdiI6IkltNUVMSHJlYmFPY1huYmNrYzdJTVE9PSIsInZhbHVlIjoieXo2STZrdUNnNzd6akl2OE9LSzZkUT09IiwibWFjIjoiYjhhNzYxYzFjODQ2OGU3ZDBjMmJlMDA0MzI1ZjI2MjBhYjY3NjcyM2VjZWUzZDM1NjJkYzE0YmIxNDYwNjk1ZSJ9</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 06:35:03] local.DEBUG: Message-ID: <364c2985d18bb2ec80f5d3e993ef65d7@localhost>
+Date: Tue, 09 Jun 2020 06:35:03 +0000
+Subject: Conversation Message
+From: vendor <vendor@gmail.com>
+To: vendor <vendor@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> vendor</p>   
+                        <p><strong> Email : </strong> vendor@gmail.com</p>
+                        <p><strong> Message : </strong> are you received products?</p>
+                        <p><strong> Order Id : 271</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation/vendor/eyJpdiI6IkltNUVMSHJlYmFPY1huYmNrYzdJTVE9PSIsInZhbHVlIjoieXo2STZrdUNnNzd6akl2OE9LSzZkUT09IiwibWFjIjoiYjhhNzYxYzFjODQ2OGU3ZDBjMmJlMDA0MzI1ZjI2MjBhYjY3NjcyM2VjZWUzZDM1NjJkYzE0YmIxNDYwNjk1ZSJ9">http://localhost/zigkart/conversation/vendor/eyJpdiI6IkltNUVMSHJlYmFPY1huYmNrYzdJTVE9PSIsInZhbHVlIjoieXo2STZrdUNnNzd6akl2OE9LSzZkUT09IiwibWFjIjoiYjhhNzYxYzFjODQ2OGU3ZDBjMmJlMDA0MzI1ZjI2MjBhYjY3NjcyM2VjZWUzZDM1NjJkYzE0YmIxNDYwNjk1ZSJ9</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 06:43:43] local.ERROR: Trying to get property 'bill_country' of non-object {"userId":8,"exception":"[object] (ErrorException(code: 0): Trying to get property 'bill_country' of non-object at D:\\xampp\\htdocs\\zigkart\\app\\Http\\Controllers\\ProductController.php:155)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Controllers\\ProductController.php(155): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to get p...', 'D:\\\\xampp\\\\htdocs...', 155, Array)
+#1 [internal function]: ZigKart\\Http\\Controllers\\ProductController->purchase_full_details('7263119')
+#2 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#3 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('purchase_full_d...', Array)
+#4 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(ZigKart\\Http\\Controllers\\ProductController), 'purchase_full_d...')
+#5 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
+#6 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
+#7 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\XSS.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\XSS->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\Localization.php(22): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\Localization->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(43): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#37 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#38 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#39 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#41 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\\zigkart\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\CheckReferral.php(20): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\CheckReferral->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#61 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#62 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#63 D:\\xampp\\htdocs\\zigkart\\index.php(54): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#64 {main}
+"} 
+[2020-06-09 06:47:52] local.ERROR: View [conversation] not found. {"userId":7,"exception":"[object] (InvalidArgumentException(code: 0): View [conversation] not found. at D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php:137)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths('conversation', Array)
+#1 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Factory.php(131): Illuminate\\View\\FileViewFinder->find('conversation')
+#2 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(971): Illuminate\\View\\Factory->make('conversation', Array, Array)
+#3 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Controllers\\ProductController.php(94): view('conversation', Array)
+#4 [internal function]: ZigKart\\Http\\Controllers\\ProductController->view_conversation('vendor', 'eyJpdiI6IllqNHB...')
+#5 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#6 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('view_conversati...', Array)
+#7 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(ZigKart\\Http\\Controllers\\ProductController), 'view_conversati...')
+#8 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
+#9 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
+#10 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\XSS.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\XSS->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\Localization.php(22): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\Localization->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(43): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#40 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#41 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#42 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#44 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\\zigkart\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\CheckReferral.php(20): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\CheckReferral->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#53 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#61 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#64 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#65 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#66 D:\\xampp\\htdocs\\zigkart\\index.php(54): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#67 {main}
+"} 
+[2020-06-09 06:51:24] local.DEBUG: Message-ID: <3118cc142734399992dd3f567af493da@localhost>
+Date: Tue, 09 Jun 2020 06:51:24 +0000
+Subject: New Order Received
+From: codecanor <codecanor@gmail.com>
+To: codecanor <codecanor@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New Order Received</title>
+</head>
+<body class="preload dashboard-upload">
+<div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>New Order Received</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+                <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                    <p> Order Id - 8390547</p> 	
+                    <p> Name - customer</p> 	
+                    <p> Email - customer@gmail.com</p> 	
+                    <p> Phone - </p> 
+                    <p> Amount - $21</p> 
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 06:51:24] local.DEBUG: Message-ID: <a48812fb59829e3117330a70e8d1ff0c@localhost>
+Date: Tue, 09 Jun 2020 06:51:24 +0000
+Subject: New Order Received
+From: codecanor <codecanor@gmail.com>
+To: customer <customer@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New Order Received</title>
+</head>
+<body class="preload dashboard-upload">
+<div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>New Order Received</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+                <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                    <p> Order Id - 8390547</p> 	
+                    <p> Name - customer</p> 	
+                    <p> Email - customer@gmail.com</p> 	
+                    <p> Phone - </p> 
+                    <p> Amount - $21</p> 
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 06:52:03] local.DEBUG: Message-ID: <0d137c739ee04b369fef87d5bce6dac4@localhost>
+Date: Tue, 09 Jun 2020 06:52:03 +0000
+Subject: Conversation Message
+From: customer <customer@gmail.com>
+To: demo <demo@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> customer</p>   
+                        <p><strong> Email : </strong> customer@gmail.com</p>
+                        <p><strong> Message : </strong> hello</p>
+                        <p><strong> Order Id : 272</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation/customer/eyJpdiI6IjRNWHE5bGwxcjBDdVdnTklUM3ZhMmc9PSIsInZhbHVlIjoiRkd6RG5YTWcySGxQd1wvUm5PT2tUblE9PSIsIm1hYyI6IjljMjk1OGNjYTYzNTJhY2E1ZjhiNDJmMTcyMzc1YzhlZmQ5Y2RkMmRmYjM1N2FiMjk1NmJlNjkzMTM4NzRhOTYifQ==">http://localhost/zigkart/conversation/customer/eyJpdiI6IjRNWHE5bGwxcjBDdVdnTklUM3ZhMmc9PSIsInZhbHVlIjoiRkd6RG5YTWcySGxQd1wvUm5PT2tUblE9PSIsIm1hYyI6IjljMjk1OGNjYTYzNTJhY2E1ZjhiNDJmMTcyMzc1YzhlZmQ5Y2RkMmRmYjM1N2FiMjk1NmJlNjkzMTM4NzRhOTYifQ==</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 07:32:55] production.ERROR: SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) (SQL: select * from `users` where `id` = 1 limit 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) (SQL: select * from `users` where `id` = 1 limit 1) at D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) at D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:70)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(333): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2130): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#3 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2118): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2604): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2119): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\BuildsQueries.php(77): Illuminate\\Database\\Query\\Builder->get(Array)
+#7 D:\\xampp\\htdocs\\zigkart\\app\\Models\\Members.php(165): Illuminate\\Database\\Query\\Builder->first()
+#8 D:\\xampp\\htdocs\\zigkart\\app\\Providers\\AppServiceProvider.php(45): ZigKart\\Models\\Members::adminData()
+#9 [internal function]: ZigKart\\Providers\\AppServiceProvider->boot()
+#10 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#11 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#12 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#13 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#14 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(827): Illuminate\\Container\\Container->call(Array)
+#15 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(810): Illuminate\\Foundation\\Application->bootProvider(Object(ZigKart\\Providers\\AppServiceProvider))
+#16 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(ZigKart\\Providers\\AppServiceProvider), 20)
+#17 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(811): array_walk(Array, Object(Closure))
+#18 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#19 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(210): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#20 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(162): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#21 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(146): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#22 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\\zigkart\\index.php(54): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#24 {main}
+"} 
+[2020-06-09 07:37:39] local.DEBUG: Message-ID: <ae05f7fdeac9f502265341e0621fe47b@localhost>
+Date: Tue, 09 Jun 2020 07:37:39 +0000
+Subject: Conversation Message
+From: demo <demo@gmail.com>
+To: customer <customer@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> demo</p>   
+                        <p><strong> Email : </strong> demo@gmail.com</p>
+                        <p><strong> Message : </strong> ok</p>
+                        <p><strong> Order Id : 272</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation/demo/eyJpdiI6ImIzUWw0a0YzMlNxRzA3U05DeVwvMElBPT0iLCJ2YWx1ZSI6IlNBTU1JQlUreWR0TkpPemhqNEE5bHc9PSIsIm1hYyI6IjBkZDIwZmUwYWUwNjgxN2Y2Y2EwYWYzZmE4ZWJiMmVkZWQyNzM2Njk3YjhiMmEyYjgxNTY3NTQ0YzgxYjhhMWMifQ==">http://localhost/zigkart/conversation/demo/eyJpdiI6ImIzUWw0a0YzMlNxRzA3U05DeVwvMElBPT0iLCJ2YWx1ZSI6IlNBTU1JQlUreWR0TkpPemhqNEE5bHc9PSIsIm1hYyI6IjBkZDIwZmUwYWUwNjgxN2Y2Y2EwYWYzZmE4ZWJiMmVkZWQyNzM2Njk3YjhiMmEyYjgxNTY3NTQ0YzgxYjhhMWMifQ==</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 07:41:09] local.DEBUG: Message-ID: <6e3b39ea96c3c010df5348525fcdf8ed@localhost>
+Date: Tue, 09 Jun 2020 07:41:09 +0000
+Subject: Conversation Message
+From: demo <demo@gmail.com>
+To: customer <customer@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> demo</p>   
+                        <p><strong> Email : </strong> demo@gmail.com</p>
+                        <p><strong> Message : </strong> please transfer amount</p>
+                        <p><strong> Order Id : 272</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation/demo/eyJpdiI6ImIzUWw0a0YzMlNxRzA3U05DeVwvMElBPT0iLCJ2YWx1ZSI6IlNBTU1JQlUreWR0TkpPemhqNEE5bHc9PSIsIm1hYyI6IjBkZDIwZmUwYWUwNjgxN2Y2Y2EwYWYzZmE4ZWJiMmVkZWQyNzM2Njk3YjhiMmEyYjgxNTY3NTQ0YzgxYjhhMWMifQ==">http://localhost/zigkart/conversation/demo/eyJpdiI6ImIzUWw0a0YzMlNxRzA3U05DeVwvMElBPT0iLCJ2YWx1ZSI6IlNBTU1JQlUreWR0TkpPemhqNEE5bHc9PSIsIm1hYyI6IjBkZDIwZmUwYWUwNjgxN2Y2Y2EwYWYzZmE4ZWJiMmVkZWQyNzM2Njk3YjhiMmEyYjgxNTY3NTQ0YzgxYjhhMWMifQ==</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 07:43:21] local.DEBUG: Message-ID: <94334082c0468abef9820ed6f55f40bc@localhost>
+Date: Tue, 09 Jun 2020 07:43:21 +0000
+Subject: Conversation Message
+From: customer <customer@gmail.com>
+To: demo <demo@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> customer</p>   
+                        <p><strong> Email : </strong> customer@gmail.com</p>
+                        <p><strong> Message : </strong> ok i will transfer</p>
+                        <p><strong> Order Id : 272</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation/customer/eyJpdiI6IkVKQWYwWFM2akhcL2NMVW9JZzhYMDhBPT0iLCJ2YWx1ZSI6InUrSkF5Y2kwaEIxWmpBZE9CTldFOXc9PSIsIm1hYyI6IjcyZjNlNTEzY2ExNzNjNTE5YzYzMDVkOWUxNTk2NDUyYTIxODI0ZjRlNDg0ZTFjYTJkZjNjMjlhZGU0YjU3OTIifQ==">http://localhost/zigkart/conversation/customer/eyJpdiI6IkVKQWYwWFM2akhcL2NMVW9JZzhYMDhBPT0iLCJ2YWx1ZSI6InUrSkF5Y2kwaEIxWmpBZE9CTldFOXc9PSIsIm1hYyI6IjcyZjNlNTEzY2ExNzNjNTE5YzYzMDVkOWUxNTk2NDUyYTIxODI0ZjRlNDg0ZTFjYTJkZjNjMjlhZGU0YjU3OTIifQ==</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 07:43:59] local.DEBUG: Message-ID: <109dd7ff40f5b636501c09d224a6dc9f@localhost>
+Date: Tue, 09 Jun 2020 07:43:59 +0000
+Subject: Conversation Message
+From: customer <customer@gmail.com>
+To: demo <demo@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> customer</p>   
+                        <p><strong> Email : </strong> customer@gmail.com</p>
+                        <p><strong> Message : </strong> ok i will transfer</p>
+                        <p><strong> Order Id : 272</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation/customer/eyJpdiI6IkVKQWYwWFM2akhcL2NMVW9JZzhYMDhBPT0iLCJ2YWx1ZSI6InUrSkF5Y2kwaEIxWmpBZE9CTldFOXc9PSIsIm1hYyI6IjcyZjNlNTEzY2ExNzNjNTE5YzYzMDVkOWUxNTk2NDUyYTIxODI0ZjRlNDg0ZTFjYTJkZjNjMjlhZGU0YjU3OTIifQ==">http://localhost/zigkart/conversation/customer/eyJpdiI6IkVKQWYwWFM2akhcL2NMVW9JZzhYMDhBPT0iLCJ2YWx1ZSI6InUrSkF5Y2kwaEIxWmpBZE9CTldFOXc9PSIsIm1hYyI6IjcyZjNlNTEzY2ExNzNjNTE5YzYzMDVkOWUxNTk2NDUyYTIxODI0ZjRlNDg0ZTFjYTJkZjNjMjlhZGU0YjU3OTIifQ==</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 07:44:29] local.DEBUG: Message-ID: <ddafd1e50e73382243d58dffd06c7e1f@localhost>
+Date: Tue, 09 Jun 2020 07:44:29 +0000
+Subject: Conversation Message
+From: demo <demo@gmail.com>
+To: customer <customer@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> demo</p>   
+                        <p><strong> Email : </strong> demo@gmail.com</p>
+                        <p><strong> Message : </strong> thank you</p>
+                        <p><strong> Order Id : 272</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation/demo/eyJpdiI6ImIzUWw0a0YzMlNxRzA3U05DeVwvMElBPT0iLCJ2YWx1ZSI6IlNBTU1JQlUreWR0TkpPemhqNEE5bHc9PSIsIm1hYyI6IjBkZDIwZmUwYWUwNjgxN2Y2Y2EwYWYzZmE4ZWJiMmVkZWQyNzM2Njk3YjhiMmEyYjgxNTY3NTQ0YzgxYjhhMWMifQ==">http://localhost/zigkart/conversation/demo/eyJpdiI6ImIzUWw0a0YzMlNxRzA3U05DeVwvMElBPT0iLCJ2YWx1ZSI6IlNBTU1JQlUreWR0TkpPemhqNEE5bHc9PSIsIm1hYyI6IjBkZDIwZmUwYWUwNjgxN2Y2Y2EwYWYzZmE4ZWJiMmVkZWQyNzM2Njk3YjhiMmEyYjgxNTY3NTQ0YzgxYjhhMWMifQ==</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 07:54:15] local.DEBUG: Message-ID: <740d8dc1adaeb927666f4df9a4aad866@localhost>
+Date: Tue, 09 Jun 2020 07:54:15 +0000
+Subject: Conversation Message
+From: demo <demo@gmail.com>
+To: vendor <vendor@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> demo</p>   
+                        <p><strong> Email : </strong> demo@gmail.com</p>
+                        <p><strong> Message : </strong> hi</p>
+                        <p><strong> Order Id : 243</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation-to-vendor/demo/eyJpdiI6Im1TRUFHS0ExM0c0REVpOHViNHlma1E9PSIsInZhbHVlIjoiQmVtZGNTUW1CWTdzUndNY3pyemw3UT09IiwibWFjIjoiODQ0MjRhOTE3NzQxNmYwNmEyYWVjYTg0NmUzNDY0YTVmNTk3ZTgzZjU4ZTJhYjk1MmZhN2YwNWYyZjBlODk2MyJ9">http://localhost/zigkart/conversation-to-vendor/demo/eyJpdiI6Im1TRUFHS0ExM0c0REVpOHViNHlma1E9PSIsInZhbHVlIjoiQmVtZGNTUW1CWTdzUndNY3pyemw3UT09IiwibWFjIjoiODQ0MjRhOTE3NzQxNmYwNmEyYWVjYTg0NmUzNDY0YTVmNTk3ZTgzZjU4ZTJhYjk1MmZhN2YwNWYyZjBlODk2MyJ9</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 09:36:23] local.ERROR: Process could not be started [The system cannot find the path specified.
+] {"userId":7,"exception":"[object] (Swift_TransportException(code: 0): Process could not be started [The system cannot find the path specified.
+] at D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\StreamBuffer.php:302)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\StreamBuffer.php(54): Swift_Transport_StreamBuffer->establishProcessConnection()
+#1 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#2 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\SendmailTransport.php(50): Swift_Transport_AbstractSmtpTransport->start()
+#3 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mailer.php(65): Swift_Transport_SendmailTransport->start()
+#4 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(484): Swift_Mailer->send(Object(Swift_Message), Array)
+#5 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(259): Illuminate\\Mail\\Mailer->sendSwiftMessage(Object(Swift_Message))
+#6 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(239): Illuminate\\Mail\\Mailer->send('chat_mail', Array, Object(Closure))
+#7 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Controllers\\ProductController.php(72): Illuminate\\Support\\Facades\\Facade::__callStatic('send', Array)
+#8 [internal function]: ZigKart\\Http\\Controllers\\ProductController->conversation_message(Object(Illuminate\\Http\\Request))
+#9 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#10 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('conversation_me...', Array)
+#11 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(ZigKart\\Http\\Controllers\\ProductController), 'conversation_me...')
+#12 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
+#13 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
+#14 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\XSS.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\XSS->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\Localization.php(22): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\Localization->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(43): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#44 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#46 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#47 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\\zigkart\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\CheckReferral.php(20): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\CheckReferral->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#59 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#62 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#65 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#66 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#67 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#68 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#69 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#70 D:\\xampp\\htdocs\\zigkart\\index.php(54): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#71 {main}
+"} 
+[2020-06-09 09:38:11] local.DEBUG: Message-ID: <d30f1b353780237f65d7c4e80783e531@localhost>
+Date: Tue, 09 Jun 2020 09:38:11 +0000
+Subject: Conversation Message
+From: customer <customer@gmail.com>
+To: demo <demo@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> customer</p>   
+                        <p><strong> Email : </strong> customer@gmail.com</p>
+                        <p><strong> Message : </strong> are you there?</p>
+                        <p><strong> Order Id : 272</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation-to-buyer/customer/eyJpdiI6Ilo5YWl2YktNV1wvUnVVZVUrc1ViK2x3PT0iLCJ2YWx1ZSI6IlhhRVFhbTRMMHkrN0VJZnZrWkl1dUE9PSIsIm1hYyI6ImI1Yzc0ZGY3MTBhMGJiMjYwODcxYWI3ZWRhMjAxY2IwMzkxMTJkY2NkZWM3ODYzMzA0ZDc1OGY4ZTFhMjFjNTIifQ==">http://localhost/zigkart/conversation-to-buyer/customer/eyJpdiI6Ilo5YWl2YktNV1wvUnVVZVUrc1ViK2x3PT0iLCJ2YWx1ZSI6IlhhRVFhbTRMMHkrN0VJZnZrWkl1dUE9PSIsIm1hYyI6ImI1Yzc0ZGY3MTBhMGJiMjYwODcxYWI3ZWRhMjAxY2IwMzkxMTJkY2NkZWM3ODYzMzA0ZDc1OGY4ZTFhMjFjNTIifQ==</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
+[2020-06-09 09:39:07] local.ERROR: Process could not be started [The system cannot find the path specified.
+] {"userId":7,"exception":"[object] (Swift_TransportException(code: 0): Process could not be started [The system cannot find the path specified.
+] at D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\StreamBuffer.php:302)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\StreamBuffer.php(54): Swift_Transport_StreamBuffer->establishProcessConnection()
+#1 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#2 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\SendmailTransport.php(50): Swift_Transport_AbstractSmtpTransport->start()
+#3 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mailer.php(65): Swift_Transport_SendmailTransport->start()
+#4 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(484): Swift_Mailer->send(Object(Swift_Message), Array)
+#5 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(259): Illuminate\\Mail\\Mailer->sendSwiftMessage(Object(Swift_Message))
+#6 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(239): Illuminate\\Mail\\Mailer->send('chat_mail', Array, Object(Closure))
+#7 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Controllers\\ProductController.php(72): Illuminate\\Support\\Facades\\Facade::__callStatic('send', Array)
+#8 [internal function]: ZigKart\\Http\\Controllers\\ProductController->conversation_message(Object(Illuminate\\Http\\Request))
+#9 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#10 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('conversation_me...', Array)
+#11 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(ZigKart\\Http\\Controllers\\ProductController), 'conversation_me...')
+#12 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
+#13 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
+#14 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\XSS.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\XSS->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\Localization.php(22): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\Localization->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(43): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#44 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#46 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#47 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\\zigkart\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\CheckReferral.php(20): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\CheckReferral->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#59 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#62 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#65 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#66 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#67 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#68 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#69 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#70 D:\\xampp\\htdocs\\zigkart\\index.php(54): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#71 {main}
+"} 
+[2020-06-09 09:39:20] local.ERROR: Process could not be started [The system cannot find the path specified.
+] {"userId":7,"exception":"[object] (Swift_TransportException(code: 0): Process could not be started [The system cannot find the path specified.
+] at D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\StreamBuffer.php:302)
+[stacktrace]
+#0 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\StreamBuffer.php(54): Swift_Transport_StreamBuffer->establishProcessConnection()
+#1 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#2 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\SendmailTransport.php(50): Swift_Transport_AbstractSmtpTransport->start()
+#3 D:\\xampp\\htdocs\\zigkart\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mailer.php(65): Swift_Transport_SendmailTransport->start()
+#4 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(484): Swift_Mailer->send(Object(Swift_Message), Array)
+#5 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(259): Illuminate\\Mail\\Mailer->sendSwiftMessage(Object(Swift_Message))
+#6 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(239): Illuminate\\Mail\\Mailer->send('chat_mail', Array, Object(Closure))
+#7 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Controllers\\ProductController.php(72): Illuminate\\Support\\Facades\\Facade::__callStatic('send', Array)
+#8 [internal function]: ZigKart\\Http\\Controllers\\ProductController->conversation_message(Object(Illuminate\\Http\\Request))
+#9 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#10 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('conversation_me...', Array)
+#11 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(219): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(ZigKart\\Http\\Controllers\\ProductController), 'conversation_me...')
+#12 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(176): Illuminate\\Routing\\Route->runController()
+#13 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(680): Illuminate\\Routing\\Route->run()
+#14 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\XSS.php(24): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\XSS->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\Localization.php(22): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\Localization->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(43): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(75): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#44 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(657): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(623): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#46 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(612): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#47 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\\zigkart\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\\zigkart\\app\\Http\\Middleware\\CheckReferral.php(20): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): ZigKart\\Http\\Middleware\\CheckReferral->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#57 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#59 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#62 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#63 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#64 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#65 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(163): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#66 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#67 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#68 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#69 D:\\xampp\\htdocs\\zigkart\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#70 D:\\xampp\\htdocs\\zigkart\\index.php(54): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#71 {main}
+"} 
+[2020-06-09 09:39:50] local.DEBUG: Message-ID: <54212a346ff48a9d671c08c36ab41e52@localhost>
+Date: Tue, 09 Jun 2020 09:39:50 +0000
+Subject: Conversation Message
+From: customer <customer@gmail.com>
+To: demo <demo@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Message</title>
+</head>
+<body class="preload dashboard-upload">
+ <div class="dashboard_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dashboard_title_area">
+                            <div class="pull-left">
+                                <div class="dashboard__title">
+                                    <h2>Conversation Message</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.col-md-12 -->
+                </div>
+                <!-- end /.row -->
+               <div class="row">
+                    <div class="col-lg-8 col-md-7">
+                        <p><strong> Name : </strong> customer</p>   
+                        <p><strong> Email : </strong> customer@gmail.com</p>
+                        <p><strong> Message : </strong> ww</p>
+                        <p><strong> Order Id : 272</p> 
+                        <p><strong> Conversation Url : </strong> <a href="http://localhost/zigkart/conversation-to-buyer/customer/eyJpdiI6Ilo5YWl2YktNV1wvUnVVZVUrc1ViK2x3PT0iLCJ2YWx1ZSI6IlhhRVFhbTRMMHkrN0VJZnZrWkl1dUE9PSIsIm1hYyI6ImI1Yzc0ZGY3MTBhMGJiMjYwODcxYWI3ZWRhMjAxY2IwMzkxMTJkY2NkZWM3ODYzMzA0ZDc1OGY4ZTFhMjFjNTIifQ==">http://localhost/zigkart/conversation-to-buyer/customer/eyJpdiI6Ilo5YWl2YktNV1wvUnVVZVUrc1ViK2x3PT0iLCJ2YWx1ZSI6IlhhRVFhbTRMMHkrN0VJZnZrWkl1dUE9PSIsIm1hYyI6ImI1Yzc0ZGY3MTBhMGJiMjYwODcxYWI3ZWRhMjAxY2IwMzkxMTJkY2NkZWM3ODYzMzA0ZDc1OGY4ZTFhMjFjNTIifQ==</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>  
