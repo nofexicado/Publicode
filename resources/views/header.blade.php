@@ -1,35 +1,35 @@
 <header id="header">
 <div class="container-fluid">
       <div class="row">
-      <div id="logo" class="col-lg-3 col-md-3 col-sm-4 pt-2">
-        <button type="button" id="sidebarCollapse" class="btn button-color mr-4">
+      <div id="logo" class="col-lg-3 col-md-3 col-sm-4 pt-1">
+        {{-- <button type="button" id="sidebarCollapse" class="btn button-color mr-4">
           <i class="fa fa-bars"></i>
           <span>{{ Helper::translation(1932,$translate) }}</span>
-        </button>
+        </button> --}}
         @if($allsettings->site_logo != '')
     	<a href="{{ URL::to('/') }}">
-    	<img src="{{ url('/') }}/public/storage/settings/{{ $allsettings->site_logo }}" alt="{{ $allsettings->site_title }}">
+        <img src="{{ url('/') }}/public/storage/settings/{{ $allsettings->site_logo }}" alt="{{ $allsettings->site_title }}">
     	</a>
-    	@endif
+        @endif
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 mt-2 pt-1 pb-3">
+      <div class="col-lg-4 col-md-4 col-sm-4">
              <form action="{{ route('shop') }}" class="search_form" id="search_form" method="post" enctype="multipart/form-data">
              {{ csrf_field() }}
               <div class="input-group flex-fill">
-                 <input type="text" class="form-control" id="search_text" name="search_text" placeholder="{{ Helper::translation(2039,$translate) }}">
+                 <input type="text" class="form-control mt-2" id="search_text" name="search_text" placeholder="{{ Helper::translation(2039,$translate) }}">
                    <div class="input-group-append">
-                    <button class="btn btn-secondary button-color" type="submit">
+                    <button class="btn btn-secondary button-color mt-2" type="submit">
                        <i class="fa fa-search"></i>
                  </button>
             </div>
          </div>
          </form>
       </div> 
-     <div class="col-lg-5 col-md-5 col-sm-4 mt-2 pt-1 mb-1">
+     <div class="col-lg-5 col-md-5 col-sm-4 mt-2 pt-1 pb-1">
       <nav class="pull-right" id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="{{ URL::to('/') }}">Inicio</a></li>
-          <li> <a href="{{ URL::to('/shop') }}"> {{ Helper::translation(2040,$translate) }} </a></li>
+          <li> <a href="{{ URL::to('/shop') }}">Categorías</a></li>
           {{-- @if($allsettings->site_blog_display == 1)
           <li> <a href="{{ URL::to('/blog') }}"> {{ Helper::translation(1978,$translate) }} </a></li>
           @endif --}}
@@ -39,6 +39,7 @@
           {{-- <li> <a href="{{ URL::to('/contact') }}"> {{ Helper::translation(2012,$translate) }} </a></li> --}}
           {{-- @if($allsettings->google_translate == 1) --}}
           <li class="nav-item"><a href="{{ url('/cart') }}" class="nav-link"><i class="fa fa-shopping-cart"></i> {{ Helper::translation(1983,$translate) }} <span class="cart-badge">{{ $cart_count }}</span></a></li>
+          
           {{-- <li class="menu-has-children"><a href="javascript:void(0)"><span class="fa fa-language"></span> {{ $language_title }}</a>
             <ul>
               @foreach($languages['view'] as $language)

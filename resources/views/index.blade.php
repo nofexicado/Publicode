@@ -10,37 +10,21 @@
     <main role="main" class="main-content">
       @if(count($slideshow['view']) != 0)
       <div id="myCarousel" class="carousel pt-5 slide carousel-fade" data-ride="carousel">
-        <ol class="carousel-indicators">
-        @php $k = 1; @endphp
-        @foreach($slideshow['view'] as $slide)
-          <li data-target="#myCarousel" data-slide-to="{{ $k }}" @if($k == 1) class="active" @endif></li>
-          @php $k++; @endphp
-          @endforeach
-        </ol>
-        <div class="carousel-inner">
+        <div class="carousel-inner pb-3">
           @php $k = 1; @endphp
           @foreach($slideshow['view'] as $slide)
           <div class="carousel-item @if($k == 1) active @endif">
-            <img class="first-slide" src="{{ url('/') }}/public/storage/slideshow/{{ $slide->slide_image }}" alt="{{ $slide->slide_image }}">
+            <img class="first-slide img-fluid" style="max-width: 100%;" src="{{ url('/') }}/public/storage/slideshow/{{ $slide->slide_image }}" alt="{{ $slide->slide_image }}">
             <div class="container">
-              <div class="carousel-caption @if($slide->slide_text_position != '') text-{{ $slide->slide_text_position }} @else text-left @endif">
-                <h1>{{ $slide->slide_title }}</h1>
+              <div class="carousel-caption pb-1 @if($slide->slide_text_position != '') text-{{ $slide->slide_text_position }} @else text-left @endif">
+                <h2>{{ $slide->slide_title }}</h2>
                 <p>{{ $slide->slide_desc }}</p>
-                <p>@if($slide->slide_btn_link != '')<a class="btn button-color" href="{{ $slide->slide_btn_link }}" role="button" target="_blank">@endif @if($slide->slide_btn_text != '') {{ $slide->slide_btn_text }} @endif @if($slide->slide_btn_link != '')</a>@endif</p>
               </div>
             </div>
           </div>
           @php $k++; @endphp
           @endforeach
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">{{ Helper::translation(2054,$translate) }}</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">{{ Helper::translation(2055,$translate) }}</span>
-        </a>
       </div>
       @endif
      @if(count($categorybox['view']) != 0)

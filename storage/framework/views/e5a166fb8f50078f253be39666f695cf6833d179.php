@@ -10,37 +10,21 @@
     <main role="main" class="main-content">
       <?php if(count($slideshow['view']) != 0): ?>
       <div id="myCarousel" class="carousel pt-5 slide carousel-fade" data-ride="carousel">
-        <ol class="carousel-indicators">
-        <?php $k = 1; ?>
-        <?php $__currentLoopData = $slideshow['view']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $slide): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-          <li data-target="#myCarousel" data-slide-to="<?php echo e($k); ?>" <?php if($k == 1): ?> class="active" <?php endif; ?>></li>
-          <?php $k++; ?>
-          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-        </ol>
-        <div class="carousel-inner">
+        <div class="carousel-inner pb-3">
           <?php $k = 1; ?>
           <?php $__currentLoopData = $slideshow['view']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $slide): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           <div class="carousel-item <?php if($k == 1): ?> active <?php endif; ?>">
-            <img class="first-slide" src="<?php echo e(url('/')); ?>/public/storage/slideshow/<?php echo e($slide->slide_image); ?>" alt="<?php echo e($slide->slide_image); ?>">
+            <img class="first-slide img-fluid" style="max-width: 100%;" src="<?php echo e(url('/')); ?>/public/storage/slideshow/<?php echo e($slide->slide_image); ?>" alt="<?php echo e($slide->slide_image); ?>">
             <div class="container">
-              <div class="carousel-caption <?php if($slide->slide_text_position != ''): ?> text-<?php echo e($slide->slide_text_position); ?> <?php else: ?> text-left <?php endif; ?>">
-                <h1><?php echo e($slide->slide_title); ?></h1>
+              <div class="carousel-caption pb-1 <?php if($slide->slide_text_position != ''): ?> text-<?php echo e($slide->slide_text_position); ?> <?php else: ?> text-left <?php endif; ?>">
+                <h2><?php echo e($slide->slide_title); ?></h2>
                 <p><?php echo e($slide->slide_desc); ?></p>
-                <p><?php if($slide->slide_btn_link != ''): ?><a class="btn button-color" href="<?php echo e($slide->slide_btn_link); ?>" role="button" target="_blank"><?php endif; ?> <?php if($slide->slide_btn_text != ''): ?> <?php echo e($slide->slide_btn_text); ?> <?php endif; ?> <?php if($slide->slide_btn_link != ''): ?></a><?php endif; ?></p>
               </div>
             </div>
           </div>
           <?php $k++; ?>
           <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only"><?php echo e(Helper::translation(2054,$translate)); ?></span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only"><?php echo e(Helper::translation(2055,$translate)); ?></span>
-        </a>
       </div>
       <?php endif; ?>
      <?php if(count($categorybox['view']) != 0): ?>

@@ -1,36 +1,33 @@
 <header id="header">
 <div class="container-fluid">
       <div class="row">
-      <div id="logo" class="col-lg-3 col-md-3 col-sm-4 pt-2">
-        <button type="button" id="sidebarCollapse" class="btn button-color mr-4">
-          <i class="fa fa-bars"></i>
-          <span><?php echo e(Helper::translation(1932,$translate)); ?></span>
-        </button>
+      <div id="logo" class="col-lg-3 col-md-3 col-sm-4 pt-1">
+        
         <?php if($allsettings->site_logo != ''): ?>
     	<a href="<?php echo e(URL::to('/')); ?>">
-    	<img src="<?php echo e(url('/')); ?>/public/storage/settings/<?php echo e($allsettings->site_logo); ?>" alt="<?php echo e($allsettings->site_title); ?>">
+        <img src="<?php echo e(url('/')); ?>/public/storage/settings/<?php echo e($allsettings->site_logo); ?>" alt="<?php echo e($allsettings->site_title); ?>">
     	</a>
-    	<?php endif; ?>
+        <?php endif; ?>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 mt-2 pt-1 pb-3">
+      <div class="col-lg-4 col-md-4 col-sm-4">
              <form action="<?php echo e(route('shop')); ?>" class="search_form" id="search_form" method="post" enctype="multipart/form-data">
              <?php echo e(csrf_field()); ?>
 
               <div class="input-group flex-fill">
-                 <input type="text" class="form-control" id="search_text" name="search_text" placeholder="<?php echo e(Helper::translation(2039,$translate)); ?>">
+                 <input type="text" class="form-control mt-2" id="search_text" name="search_text" placeholder="<?php echo e(Helper::translation(2039,$translate)); ?>">
                    <div class="input-group-append">
-                    <button class="btn btn-secondary button-color" type="submit">
+                    <button class="btn btn-secondary button-color mt-2" type="submit">
                        <i class="fa fa-search"></i>
                  </button>
             </div>
          </div>
          </form>
       </div> 
-     <div class="col-lg-5 col-md-5 col-sm-4 mt-2 pt-1 mb-1">
+     <div class="col-lg-5 col-md-5 col-sm-4 mt-2 pt-1 pb-1">
       <nav class="pull-right" id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="<?php echo e(URL::to('/')); ?>">Inicio</a></li>
-          <li> <a href="<?php echo e(URL::to('/shop')); ?>"> <?php echo e(Helper::translation(2040,$translate)); ?> </a></li>
+          <li> <a href="<?php echo e(URL::to('/shop')); ?>">Categorías</a></li>
           
           <?php $__currentLoopData = $mainmenu['pages']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $pages): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 		  <li> <a href="<?php echo e(URL::to('/page/')); ?>/<?php echo e($pages->page_slug); ?>">Nosotros</a></li>
@@ -38,6 +35,7 @@
           
           
           <li class="nav-item"><a href="<?php echo e(url('/cart')); ?>" class="nav-link"><i class="fa fa-shopping-cart"></i> <?php echo e(Helper::translation(1983,$translate)); ?> <span class="cart-badge"><?php echo e($cart_count); ?></span></a></li>
+          
           
           
           <?php if(Auth::guest()): ?>

@@ -7,16 +7,16 @@
 </head>
 <body>
     @include('header')
-    <section class="headerbg" style="background-image: url('{{ url('/') }}/public/storage/settings/{{ $allsettings->site_header_background }}');">
-      <div class="container text-left">
+    <section class="pt-3">
+      <div class="container text-left pt-5">
         <h2 class="mb-0">{{ Helper::translation(2040,$translate) }}</h2>
         <p class="mb-0"><a href="{{ URL::to('/') }}">{{ Helper::translation(1913,$translate) }}</a> <span class="split">&gt;</span> <span>{{ Helper::translation(2040,$translate) }}</span></p>
       </div>
     </section>
    <main role="main">
       <div class="container mt-3" id="demo">
-         <div class="row jplist-panel">
-           <div class="col-md-3">
+         <div>
+           {{-- <div class="col-md-3">
              <div class="mt-1 mb-1 pt-1 pb-1">
                  <div class="card shadow-sm bg-white border-0 mb-3 rounded-0 categorylist">
                     <h5 class="card-header bg-white link-color">{{ Helper::translation(1932,$translate) }}</h5>
@@ -113,9 +113,19 @@
                   @endforeach
                  @endif
                  </div>
-         	</div>
-            <div class="col-md-9">
-              <div class="mt-1 mb-1 pt-1 pb-1">
+         	</div> --}}
+            <div class="col-md-12">
+                    @foreach($categories['display'] as $menu)
+                    <input type="checkbox" name="category[]" value="cat-{{ $menu->cat_id }}" data-path=".cat-{{ $menu->cat_id }}" id="cat-{{ $menu->cat_id }}"> {{ $menu->category_name }}<br/>
+                       @if(count($menu->subcategory) != 0)
+                          @foreach($menu->subcategory as $sub_category)
+                           <span class="move_subcategory"><input type="checkbox" name="category[]" value="subcat-{{ $sub_category->subcat_id }}" data-path=".subcat-{{ $sub_category->subcat_id }}" id="subcat-{{ $sub_category->subcat_id }}"> {{ $sub_category->subcategory_name }}<br/></span>
+                          @endforeach
+                       @endif
+                    @endforeach
+                    
+                   
+              {{-- <div class="mt-1 mb-1 pt-1 pb-1">
                   <div class="row list" align="center">
                            @php $z = 1; @endphp
                               @foreach($shop['product'] as $product) 
@@ -240,7 +250,7 @@
                                     </div>	
                               </div>
                          </div>  
-              </div>
+              </div> --}}
          	</div>
          </div>
       </div>
