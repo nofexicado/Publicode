@@ -27,12 +27,14 @@
         </div>
       </div>
       <?php endif; ?>
-     <?php if(count($categorybox['view']) != 0): ?>
-      <div class="container white-box">
+
+      
+      <?php if(count($categorybox['view']) != 0): ?>
+      <div class="container">  
         <h4 class="black mb-2 pb-2"><?php echo e(Helper::translation(2056,$translate)); ?></h4>
-        <div class="row">
+        <div class="owl-carousel owl-theme pt-4 white-box mt-2"align="center">
          <?php $__currentLoopData = $categorybox['view']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-          <div class="icon-category pt-2 pb-2 ash-border col-lg-2 col-md-2 col-sm-4  ml-3 mr-3" align="center">
+          <div class="pt-1 pb-1 pl-1 pr-1 col-lg-2 col-md-4 col-sm-4" align="center">
             <a href="<?php echo e(URL::to('/shop/category')); ?>/<?php echo e($category->category_slug); ?>" title="<?php echo e($category->category_name); ?>">
             <?php if($category->category_image != ''): ?>
             <img src="<?php echo e(url('/')); ?>/public/storage/category/<?php echo e($category->category_image); ?>" alt="<?php echo e($category->category_name); ?>">
@@ -43,22 +45,11 @@
             <p><a href="<?php echo e(URL::to('/shop/category')); ?>/<?php echo e($category->category_slug); ?>" class="link-color fs14"><?php echo e($category->category_name); ?></a></p>
           </div>
           <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-          <?php if(count($categorybox['view']) != 0): ?>
-          <div class="icon-category pt-2 pb-2 ash-border col-lg-2 col-md-2 col-sm-4  ml-3 mr-3" align="center">
-            <a href="<?php echo e(URL::to('/shop')); ?>" title="More">
-            <?php if($allsettings->site_more_category != ''): ?>
-            <img src="<?php echo e(url('/')); ?>/public/storage/settings/<?php echo e($allsettings->site_more_category); ?>" alt="More">
-            <?php else: ?>
-            <img src="<?php echo e(url('/')); ?>/public/img/no-image.jpg" alt="More">
-            <?php endif; ?>
-            </a>
-            <p><a href="<?php echo e(URL::to('/shop')); ?>" class="link-color fs14"><?php echo e(Helper::translation(2057,$translate)); ?></a></p>
-          </div>
-          <?php endif; ?>
         </div><!-- /.row -->
       </div>
-      <?php endif; ?>
-     
+    <?php endif; ?>
+      
+
       <?php if(count($physical['product']) != 0): ?> 
        <div class="container pt-3 mt-3 pb-3 mb-3">
          <div class="row">
@@ -305,9 +296,6 @@
             </div> 
         </div>
         <?php endif; ?>
-        
-      
-        
     </main>
     <?php echo $__env->make('footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <?php echo $__env->make('javascript', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>

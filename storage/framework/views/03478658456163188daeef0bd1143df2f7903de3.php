@@ -22,6 +22,10 @@
 <link rel="stylesheet" href="<?php echo e(URL::to('resources/views/template/css/style.css')); ?>">
 <link rel="stylesheet" href="<?php echo e(URL::to('resources/views/template/css/responsive.css')); ?>">
 <?php echo $__env->make('dynamic', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
+<link rel="stylesheet" href="<?php echo e(URL::to('resources/views/template/css/owl.carousel.min.css')); ?>">
+<link rel="stylesheet" href="<?php echo e(URL::to('resources/views/template/css/owl.theme.default.min.css')); ?>">
+
 <link href="<?php echo e(URL::to('resources/views/template/css/carousel.css')); ?>" rel="stylesheet">
 <link rel="stylesheet" href="<?php echo e(URL::to('resources/views/template/css/font-awesome.min.css')); ?>">
 <!-- Our Custom CSS -->

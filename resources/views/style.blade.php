@@ -22,6 +22,10 @@
 <link rel="stylesheet" href="{{ URL::to('resources/views/template/css/style.css') }}">
 <link rel="stylesheet" href="{{ URL::to('resources/views/template/css/responsive.css') }}">
 @include('dynamic')
+{{-- owl-carousel --}}
+<link rel="stylesheet" href="{{ URL::to('resources/views/template/css/owl.carousel.min.css') }}">
+<link rel="stylesheet" href="{{ URL::to('resources/views/template/css/owl.theme.default.min.css') }}">
+
 <link href="{{ URL::to('resources/views/template/css/carousel.css') }}" rel="stylesheet">
 <link rel="stylesheet" href="{{ URL::to('resources/views/template/css/font-awesome.min.css') }}">
 <!-- Our Custom CSS -->

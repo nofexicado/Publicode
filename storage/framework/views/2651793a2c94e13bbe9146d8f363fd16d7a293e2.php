@@ -8,7 +8,7 @@
 <body>
     <?php echo $__env->make('header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <section class="pt-3">
-      <div class="pt-5">
+      <div class="container text-left pt-5">
         <h2 class="mb-0"><?php echo e(Helper::translation(2040,$translate)); ?></h2>
         <p class="mb-0"><a href="<?php echo e(URL::to('/')); ?>"><?php echo e(Helper::translation(1913,$translate)); ?></a> <span class="split">&gt;</span> <span><?php echo e(Helper::translation(2040,$translate)); ?></span></p>
       </div>
