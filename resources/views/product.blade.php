@@ -17,12 +17,12 @@
     <section class="headerbg" style="background-image: url('{{ url('/') }}/public/storage/settings/{{ $allsettings->site_header_background }}');">
       <div class="container text-left">
         <h2 class="mb-0">{{ $shop->product_name }}</h2>
-        <p class="mb-0"><a class="text-primary" href="{{ URL::to('/') }}">{{ Helper::translation(1913,$translate) }}</a> <span class="split">&gt;</span> <a class="text-primary" href="{{ URL::to('/shop') }}">{{ Helper::translation(2040,$translate) }}</a> <span class="split">&gt;</span><span> {{ $shop->product_name }}</span></p>
+        <p class="mb-0"><a href="{{ URL::to('/') }}">{{ Helper::translation(1913,$translate) }}</a> <span class="split">&gt;</span> <a href="{{ URL::to('/shop') }}">{{ Helper::translation(2040,$translate) }}</a> <span class="split">&gt;</span><span> {{ $shop->product_name }}</span></p>
       </div>
     </section>
 <main role="main">
       <div class="container">
-	  <div class="row bg-light border-0 mt-3 mb-3">
+	  <div class="row bg-white border-0 mt-3 mb-3">
       <div class="col-md-12 mt-3">
              @if ($message = Session::get('success'))
              <div class="alert alert-success" role="alert">
@@ -79,11 +79,10 @@
             </div>
            </div>
          </div>
-		<div class="col-md-6 mt-3 mb-3 card border border-primary" style="max-width: 30rem;" >
+		<div class="col-md-6 mt-3 mb-3">
         <form action="{{ route('cart') }}" class="cart_form" id="cart_form" method="post" enctype="multipart/form-data">
         {{ csrf_field() }}
-        <div class="card-body ">
-          <h3 class="card-header mb-3">{{ $shop->product_name }}</h3>
+          <h3>{{ $shop->product_name }}</h3>
             <span class="stars-active" style="width:88%">
                 @if($getreview == 0)
                 <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -137,14 +136,14 @@
                 @endif
                 <span>( {{ $getreview }} {{ Helper::translation(2144,$translate).' )' }}</span>
             </span>
-            @if($shop->product_sku != "")<div class="mt-2">{{ Helper::translation(1929,$translate) }} : <span>{{ $shop->product_sku }}</span></div>@endif
+            {{-- @if($shop->product_sku != "")<div class="mt-2">{{ Helper::translation(1929,$translate) }} : <span>{{ $shop->product_sku }}</span></div>@endif --}}
             @if($shop->product_type != 'digital')
             <div class="mt-2">{{ Helper::translation(2062,$translate) }} : @if($shop->product_stock != 0)<span class="theme-color">{{ Helper::translation(2063,$translate) }} ({{ $shop->product_stock }})</span>@else<span class="red-color">{{ Helper::translation(2064,$translate) }} ({{ $shop->product_stock }})</span>@endif</div>
             @endif
             @php if($shop->product_condition == 'new'){ $badg = "badge badge-warning"; } else { $badg = "badge badge-secondary"; } @endphp
             @if($shop->product_condition != "")<div class="mt-2">{{ Helper::translation(1950,$translate) }} : <span class="{{ $badg }}">{{ $shop->product_condition }}</span></div>@endif
             @if($shop->product_brand != "")<div class="mt-2">{{ Helper::translation(1947,$translate) }} : <span class="badge badge-info">{{ $shop->brand_name }}</span></div>@endif
-            <div class="mt-5">@if($shop->product_price != 0)<span @if($shop->product_offer_price != 0) class="fs16 offer-price red-color" @else class="fs32" @endif>{{ $allsettings->site_currency_symbol }}{{ $shop->product_price }}</span>@endif @if($shop->product_offer_price != 0)<span class="fs32">{{ $allsettings->site_currency_symbol }}{{ $shop->product_offer_price }}</span>@endif</div>
+            <div class="mt-5">@if($shop->product_price != 0)<span @if($shop->product_offer_price != 0) class="fs16 offer-price red-color" @else class="fs32" @endif>Precio: {{ $allsettings->site_currency_symbol }}{{ $shop->product_price }}</span>@endif @if($shop->product_offer_price != 0)<span class="fs32">{{ $allsettings->site_currency_symbol }}{{ $shop->product_offer_price }}</span>@endif</div>
              @if($shop->flash_deals == 1)
              <div class="single-details">
              <ul class="countdown-{{ $shop->product_token }}" id="countdown-timer">
@@ -200,7 +199,7 @@
               @if($shop->product_video_url != '')
               <a class="bla-2 btn btn-danger float-left mr-1" href="{{ $shop->product_video_url }}"><i class="fa fa-file-video-o"></i> {{ Helper::translation(2147,$translate) }}</a>
               @endif
-              <a href="{{ URL::to('/login') }}" class="btn btn-primary btn-lg btn-block">{{ Helper::translation(2067,$translate) }}</a> 
+              <a href="{{ URL::to('/login') }}" class="btn button-color float-left">{{ Helper::translation(2067,$translate) }}</a> 
               </div>
               @else
               @if($shop->product_stock != 0)
@@ -210,14 +209,14 @@
               @if($shop->product_video_url != '')
               <a class="bla-2 btn btn-danger float-left mr-1" href="{{ $shop->product_video_url }}"><i class="fa fa-file-video-o"></i> {{ Helper::translation(2147,$translate) }}</a>
               @endif
-              <button type="submit" class="btn btn-primary btn-lg btn-block">{{ Helper::translation(2067,$translate) }}</button>
+              <button type="submit" class="btn button-color float-left">{{ Helper::translation(2067,$translate) }}</button>
               </div>
               @else
               <div class="mt-3">
               @if($shop->product_video_url != '')
               <a class="bla-2 btn btn-danger float-left mr-1" href="{{ $shop->product_video_url }}"><i class="fa fa-file-video-o"></i> {{ Helper::translation(2147,$translate) }}</a>
               @endif
-              <a href="{{ $shop->product_external_url }}" class="btn btn-primary btn-lg btn-block" target="_blank">{{ Helper::translation(2148,$translate) }}</a>
+              <a href="{{ $shop->product_external_url }}" class="btn button-color float-left" target="_blank">{{ Helper::translation(2148,$translate) }}</a>
               </div>
               @endif
               @else
@@ -225,7 +224,7 @@
               @if($shop->product_video_url != '')
               <a class="bla-2 btn btn-danger float-left mr-1" href="{{ $shop->product_video_url }}"><i class="fa fa-file-video-o"></i> {{ Helper::translation(2147,$translate) }}</a>
               @endif
-              <a href="{{ URL::to('/edit-product') }}/{{ $shop->product_token }}" class="btn btn-primary btn-lg btn-block">{{ Helper::translation(2149,$translate) }}</a> 
+              <a href="{{ URL::to('/edit-product') }}/{{ $shop->product_token }}" class="btn button-color float-left">{{ Helper::translation(2149,$translate) }}</a> 
               </div>
               @endif
               @endif
@@ -239,10 +238,9 @@
               @endif
               <input type="hidden" name="product_user_id" value="{{ $shop->user_id }}">
               <input type="hidden" name="product_stock" value="{{ $shop->product_stock }}">
-            </div>
              </form>
              <div class="footer-box-info mt-3 mb-3 pt-3 pb-3 clearfix">
-                <p class="font-weight-bold">Compartir esto : </p>
+                <p class="font-weight-bold">{{ Helper::translation(2150,$translate) }} : </p>
                 <ul class="social-icons">
                     <li>
                     <a class="share-button" data-share-url="{{ URL::to('/product') }}/{{ $shop->product_slug }}" data-share-network="facebook" data-share-text="{{ $shop->product_short_desc }}" data-share-title="{{ $shop->product_name }}" data-share-via="{{ $allsettings->site_title }}" data-share-tags="" data-share-media="{{ url('/') }}/public/storage/product/{{ $shop->product_image }}" href="javascript:void(0)">

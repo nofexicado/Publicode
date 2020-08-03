@@ -1,7 +1,7 @@
 <header id="header">
 <div class="container-fluid">
       <div class="row">
-      <div id="logo" class="col-lg-3 col-md-3 col-sm-4 pt-1">
+      <div id="logo" class="col-lg-3 col-md-3 col-sm-4 pt-1 d-none d-sm-block">
         {{-- <button type="button" id="sidebarCollapse" class="btn button-color mr-4">
           <i class="fa fa-bars"></i>
           <span>{{ Helper::translation(1932,$translate) }}</span>
@@ -11,6 +11,11 @@
         <img src="{{ url('/') }}/public/storage/settings/{{ $allsettings->site_logo }}" alt="{{ $allsettings->site_title }}">
     	</a>
         @endif
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-4 pt-1 d-block d-sm-none">
+        <a href="{{ URL::to('/') }}">
+          <img src="{{ url('/') }}/public/storage/settings/logo.png">
+        </a>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4">
              <form action="{{ route('shop') }}" class="search_form" id="search_form" method="post" enctype="multipart/form-data">
@@ -28,6 +33,9 @@
      <div class="col-lg-5 col-md-5 col-sm-4 mt-2 pt-1 pb-1">
       <nav class="pull-right" id="nav-menu-container">
         <ul class="nav-menu">
+            {{-- <div class="">
+                <img src="{{ url('/') }}/public/storage/settings/logo.png" alt="{{ $allsettings->site_title }}">
+            </div> --}}
           <li><a href="{{ URL::to('/') }}">Inicio</a></li>
           <li> <a href="{{ URL::to('/shop') }}">Categorías</a></li>
           {{-- @if($allsettings->site_blog_display == 1)
@@ -51,24 +59,24 @@
           @if(Auth::guest())
           <li><a href="{{ url('/login') }}" class="btn login-btn">{{ Helper::translation(2041,$translate) }}</a></li>
           @else 
-          <li class="menu-has-children"><a href="javascript:void(0)">{{ Helper::translation(2042,$translate) }}</a>
+          <li class="menu-has-children"><a class="text-secondary" href="javascript:void(0)">{{ Helper::translation(2042,$translate) }}</a>
             <ul>
               @if(Auth::user()->user_type == 'customer')
-              <li><a href="{{ url('/my-profile') }}">{{ Helper::translation(2043,$translate) }}</a></li>
-              <li><a href="{{ url('/my-purchase') }}">{{ Helper::translation(2044,$translate) }}</a></li>
-              <li><a href="{{ url('/my-wallet') }}">{{ Helper::translation(2045,$translate) }}</a></li>
+              <li><a class="text-secondary" href="{{ url('/my-profile') }}">{{ Helper::translation(2043,$translate) }}</a></li>
+              <li><a class="text-secondary" href="{{ url('/my-purchase') }}">{{ Helper::translation(2044,$translate) }}</a></li>
+              <li><a class="text-secondary" href="{{ url('/my-wallet') }}">{{ Helper::translation(2045,$translate) }}</a></li>
               @endif
               @if(Auth::user()->user_type == 'vendor')
-              <li><a href="{{ url('/my-profile') }}">{{ Helper::translation(2043,$translate) }}</a></li>
-              <li><a href="{{ url('/my-product') }}">{{ Helper::translation(2046,$translate) }}</a></li>
-              <li><a href="{{ url('/attribute-type') }}">{{ Helper::translation(1914,$translate) }}</a></li>
-              <li><a href="{{ url('/attribute-value') }}">{{ Helper::translation(1921,$translate) }}</a></li>
-              <li><a href="{{ url('/my-coupon') }}">{{ Helper::translation(2047,$translate) }}</a></li>
-              <li><a href="{{ url('/my-orders') }}">{{ Helper::translation(2026,$translate) }}</a></li>
-              <li><a href="{{ url('/my-purchase') }}">{{ Helper::translation(2044,$translate) }}</a></li>
-              <li><a href="{{ url('/my-wallet') }}">{{ Helper::translation(2045,$translate) }}</a></li>
+              <li><a class="text-secondary" href="{{ url('/my-profile') }}">{{ Helper::translation(2043,$translate) }}</a></li>
+              <li><a class="text-secondary" href="{{ url('/my-product') }}">{{ Helper::translation(2046,$translate) }}</a></li>
+              <li><a class="text-secondary" href="{{ url('/attribute-type') }}">{{ Helper::translation(1914,$translate) }}</a></li>
+              <li><a class="text-secondary" href="{{ url('/attribute-value') }}">{{ Helper::translation(1921,$translate) }}</a></li>
+              <li><a class="text-secondary" href="{{ url('/my-coupon') }}">{{ Helper::translation(2047,$translate) }}</a></li>
+              <li><a class="text-secondary" href="{{ url('/my-orders') }}">{{ Helper::translation(2026,$translate) }}</a></li>
+              <li><a class="text-secondary" href="{{ url('/my-purchase') }}">{{ Helper::translation(2044,$translate) }}</a></li>
+              <li><a class="text-secondary" href="{{ url('/my-wallet') }}">{{ Helper::translation(2045,$translate) }}</a></li>
               @endif
-              <li><a href="{{ url('/logout') }}">{{ Helper::translation(2048,$translate) }}</a></li>
+              <li><a class="text-secondary" href="{{ url('/logout') }}">{{ Helper::translation(2048,$translate) }}</a></li>
             </ul>
           </li>
           @endif

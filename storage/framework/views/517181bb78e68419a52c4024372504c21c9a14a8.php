@@ -17,12 +17,12 @@
     <section class="headerbg" style="background-image: url('<?php echo e(url('/')); ?>/public/storage/settings/<?php echo e($allsettings->site_header_background); ?>');">
       <div class="container text-left">
         <h2 class="mb-0"><?php echo e($shop->product_name); ?></h2>
-        <p class="mb-0"><a class="text-primary" href="<?php echo e(URL::to('/')); ?>"><?php echo e(Helper::translation(1913,$translate)); ?></a> <span class="split">&gt;</span> <a class="text-primary" href="<?php echo e(URL::to('/shop')); ?>"><?php echo e(Helper::translation(2040,$translate)); ?></a> <span class="split">&gt;</span><span> <?php echo e($shop->product_name); ?></span></p>
+        <p class="mb-0"><a href="<?php echo e(URL::to('/')); ?>"><?php echo e(Helper::translation(1913,$translate)); ?></a> <span class="split">&gt;</span> <a href="<?php echo e(URL::to('/shop')); ?>"><?php echo e(Helper::translation(2040,$translate)); ?></a> <span class="split">&gt;</span><span> <?php echo e($shop->product_name); ?></span></p>
       </div>
     </section>
 <main role="main">
       <div class="container">
-	  <div class="row bg-light border-0 mt-3 mb-3">
+	  <div class="row bg-white border-0 mt-3 mb-3">
       <div class="col-md-12 mt-3">
              <?php if($message = Session::get('success')): ?>
              <div class="alert alert-success" role="alert">
@@ -82,12 +82,11 @@
             </div>
            </div>
          </div>
-		<div class="col-md-6 mt-3 mb-3 card border border-primary" style="max-width: 30rem;" >
+		<div class="col-md-6 mt-3 mb-3">
         <form action="<?php echo e(route('cart')); ?>" class="cart_form" id="cart_form" method="post" enctype="multipart/form-data">
         <?php echo e(csrf_field()); ?>
 
-        <div class="card-body ">
-          <h3 class="card-header mb-3"><?php echo e($shop->product_name); ?></h3>
+          <h3><?php echo e($shop->product_name); ?></h3>
             <span class="stars-active" style="width:88%">
                 <?php if($getreview == 0): ?>
                 <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -141,14 +140,14 @@
                 <?php endif; ?>
                 <span>( <?php echo e($getreview); ?> <?php echo e(Helper::translation(2144,$translate).' )'); ?></span>
             </span>
-            <?php if($shop->product_sku != ""): ?><div class="mt-2"><?php echo e(Helper::translation(1929,$translate)); ?> : <span><?php echo e($shop->product_sku); ?></span></div><?php endif; ?>
+            
             <?php if($shop->product_type != 'digital'): ?>
             <div class="mt-2"><?php echo e(Helper::translation(2062,$translate)); ?> : <?php if($shop->product_stock != 0): ?><span class="theme-color"><?php echo e(Helper::translation(2063,$translate)); ?> (<?php echo e($shop->product_stock); ?>)</span><?php else: ?><span class="red-color"><?php echo e(Helper::translation(2064,$translate)); ?> (<?php echo e($shop->product_stock); ?>)</span><?php endif; ?></div>
             <?php endif; ?>
             <?php if($shop->product_condition == 'new'){ $badg = "badge badge-warning"; } else { $badg = "badge badge-secondary"; } ?>
             <?php if($shop->product_condition != ""): ?><div class="mt-2"><?php echo e(Helper::translation(1950,$translate)); ?> : <span class="<?php echo e($badg); ?>"><?php echo e($shop->product_condition); ?></span></div><?php endif; ?>
             <?php if($shop->product_brand != ""): ?><div class="mt-2"><?php echo e(Helper::translation(1947,$translate)); ?> : <span class="badge badge-info"><?php echo e($shop->brand_name); ?></span></div><?php endif; ?>
-            <div class="mt-5"><?php if($shop->product_price != 0): ?><span <?php if($shop->product_offer_price != 0): ?> class="fs16 offer-price red-color" <?php else: ?> class="fs32" <?php endif; ?>><?php echo e($allsettings->site_currency_symbol); ?><?php echo e($shop->product_price); ?></span><?php endif; ?> <?php if($shop->product_offer_price != 0): ?><span class="fs32"><?php echo e($allsettings->site_currency_symbol); ?><?php echo e($shop->product_offer_price); ?></span><?php endif; ?></div>
+            <div class="mt-5"><?php if($shop->product_price != 0): ?><span <?php if($shop->product_offer_price != 0): ?> class="fs16 offer-price red-color" <?php else: ?> class="fs32" <?php endif; ?>>Precio: <?php echo e($allsettings->site_currency_symbol); ?><?php echo e($shop->product_price); ?></span><?php endif; ?> <?php if($shop->product_offer_price != 0): ?><span class="fs32"><?php echo e($allsettings->site_currency_symbol); ?><?php echo e($shop->product_offer_price); ?></span><?php endif; ?></div>
              <?php if($shop->flash_deals == 1): ?>
              <div class="single-details">
              <ul class="countdown-<?php echo e($shop->product_token); ?>" id="countdown-timer">
@@ -204,7 +203,7 @@
               <?php if($shop->product_video_url != ''): ?>
               <a class="bla-2 btn btn-danger float-left mr-1" href="<?php echo e($shop->product_video_url); ?>"><i class="fa fa-file-video-o"></i> <?php echo e(Helper::translation(2147,$translate)); ?></a>
               <?php endif; ?>
-              <a href="<?php echo e(URL::to('/login')); ?>" class="btn btn-primary btn-lg btn-block"><?php echo e(Helper::translation(2067,$translate)); ?></a> 
+              <a href="<?php echo e(URL::to('/login')); ?>" class="btn button-color float-left"><?php echo e(Helper::translation(2067,$translate)); ?></a> 
               </div>
               <?php else: ?>
               <?php if($shop->product_stock != 0): ?>
@@ -214,14 +213,14 @@
               <?php if($shop->product_video_url != ''): ?>
               <a class="bla-2 btn btn-danger float-left mr-1" href="<?php echo e($shop->product_video_url); ?>"><i class="fa fa-file-video-o"></i> <?php echo e(Helper::translation(2147,$translate)); ?></a>
               <?php endif; ?>
-              <button type="submit" class="btn btn-primary btn-lg btn-block"><?php echo e(Helper::translation(2067,$translate)); ?></button>
+              <button type="submit" class="btn button-color float-left"><?php echo e(Helper::translation(2067,$translate)); ?></button>
               </div>
               <?php else: ?>
               <div class="mt-3">
               <?php if($shop->product_video_url != ''): ?>
               <a class="bla-2 btn btn-danger float-left mr-1" href="<?php echo e($shop->product_video_url); ?>"><i class="fa fa-file-video-o"></i> <?php echo e(Helper::translation(2147,$translate)); ?></a>
               <?php endif; ?>
-              <a href="<?php echo e($shop->product_external_url); ?>" class="btn btn-primary btn-lg btn-block" target="_blank"><?php echo e(Helper::translation(2148,$translate)); ?></a>
+              <a href="<?php echo e($shop->product_external_url); ?>" class="btn button-color float-left" target="_blank"><?php echo e(Helper::translation(2148,$translate)); ?></a>
               </div>
               <?php endif; ?>
               <?php else: ?>
@@ -229,7 +228,7 @@
               <?php if($shop->product_video_url != ''): ?>
               <a class="bla-2 btn btn-danger float-left mr-1" href="<?php echo e($shop->product_video_url); ?>"><i class="fa fa-file-video-o"></i> <?php echo e(Helper::translation(2147,$translate)); ?></a>
               <?php endif; ?>
-              <a href="<?php echo e(URL::to('/edit-product')); ?>/<?php echo e($shop->product_token); ?>" class="btn btn-primary btn-lg btn-block"><?php echo e(Helper::translation(2149,$translate)); ?></a> 
+              <a href="<?php echo e(URL::to('/edit-product')); ?>/<?php echo e($shop->product_token); ?>" class="btn button-color float-left"><?php echo e(Helper::translation(2149,$translate)); ?></a> 
               </div>
               <?php endif; ?>
               <?php endif; ?>
@@ -243,10 +242,9 @@
               <?php endif; ?>
               <input type="hidden" name="product_user_id" value="<?php echo e($shop->user_id); ?>">
               <input type="hidden" name="product_stock" value="<?php echo e($shop->product_stock); ?>">
-            </div>
              </form>
              <div class="footer-box-info mt-3 mb-3 pt-3 pb-3 clearfix">
-                <p class="font-weight-bold">Compartir esto : </p>
+                <p class="font-weight-bold"><?php echo e(Helper::translation(2150,$translate)); ?> : </p>
                 <ul class="social-icons">
                     <li>
                     <a class="share-button" data-share-url="<?php echo e(URL::to('/product')); ?>/<?php echo e($shop->product_slug); ?>" data-share-network="facebook" data-share-text="<?php echo e($shop->product_short_desc); ?>" data-share-title="<?php echo e($shop->product_name); ?>" data-share-via="<?php echo e($allsettings->site_title); ?>" data-share-tags="" data-share-media="<?php echo e(url('/')); ?>/public/storage/product/<?php echo e($shop->product_image); ?>" href="javascript:void(0)">

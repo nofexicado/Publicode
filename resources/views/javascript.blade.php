@@ -1,14 +1,11 @@
-owl-carousel
 <script src="{{ URL::to('resources/views/template/js/jquery.min.js') }}"></script>
 <script src="{{ URL::to('resources/views/template/js/owl.carousel.min.js') }}"></script>
 <script type="text/javascript">
 $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
-        margin:10,
     loop:true,
     autoWidth:true,
     center:true,
-    items:4,
     autoplay:true,
     autoplayTimeout:3000,
     autoplayHoverPause:false,
@@ -17,19 +14,20 @@ $(document).ready(function(){
     0 : {
         autoWidth:false,
         center:true,
-        items:3,
+        items:1,
     },
     // breakpoint from 480 up
     480 : {
         autoWidth:false,
         center:true,
-        items:3,
+        items:1,
     },
     // breakpoint from 768 up
     768 : {
         autoWidth:true,
         center:true,
-        items:4,
+        items:2,
+        
     }
 }
 })

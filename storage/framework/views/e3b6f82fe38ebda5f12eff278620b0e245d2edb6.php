@@ -95,7 +95,7 @@ text-decoration:none;
 .login-btn
 {
 background:<?php echo e($allsettings->site_button_color); ?>;
-color:<?php echo e($allsettings->site_theme_color); ?> !important;
+color:#ffffff !important;
 padding:2px 8px 2px 8px !important;
 }
 .login-btn:hover,.login-btn:active

@@ -1,13 +1,18 @@
 <header id="header">
 <div class="container-fluid">
       <div class="row">
-      <div id="logo" class="col-lg-3 col-md-3 col-sm-4 pt-1">
+      <div id="logo" class="col-lg-3 col-md-3 col-sm-4 pt-1 d-none d-sm-block">
         
         <?php if($allsettings->site_logo != ''): ?>
     	<a href="<?php echo e(URL::to('/')); ?>">
         <img src="<?php echo e(url('/')); ?>/public/storage/settings/<?php echo e($allsettings->site_logo); ?>" alt="<?php echo e($allsettings->site_title); ?>">
     	</a>
         <?php endif; ?>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-4 pt-1 d-block d-sm-none">
+        <a href="<?php echo e(URL::to('/')); ?>">
+          <img src="<?php echo e(url('/')); ?>/public/storage/settings/logo.png">
+        </a>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4">
              <form action="<?php echo e(route('shop')); ?>" class="search_form" id="search_form" method="post" enctype="multipart/form-data">
@@ -26,6 +31,7 @@
      <div class="col-lg-5 col-md-5 col-sm-4 mt-2 pt-1 pb-1">
       <nav class="pull-right" id="nav-menu-container">
         <ul class="nav-menu">
+            
           <li><a href="<?php echo e(URL::to('/')); ?>">Inicio</a></li>
           <li> <a href="<?php echo e(URL::to('/shop')); ?>">Categorías</a></li>
           
@@ -41,24 +47,24 @@
           <?php if(Auth::guest()): ?>
           <li><a href="<?php echo e(url('/login')); ?>" class="btn login-btn"><?php echo e(Helper::translation(2041,$translate)); ?></a></li>
           <?php else: ?> 
-          <li class="menu-has-children"><a href="javascript:void(0)"><?php echo e(Helper::translation(2042,$translate)); ?></a>
+          <li class="menu-has-children"><a class="text-secondary" href="javascript:void(0)"><?php echo e(Helper::translation(2042,$translate)); ?></a>
             <ul>
               <?php if(Auth::user()->user_type == 'customer'): ?>
-              <li><a href="<?php echo e(url('/my-profile')); ?>"><?php echo e(Helper::translation(2043,$translate)); ?></a></li>
-              <li><a href="<?php echo e(url('/my-purchase')); ?>"><?php echo e(Helper::translation(2044,$translate)); ?></a></li>
-              <li><a href="<?php echo e(url('/my-wallet')); ?>"><?php echo e(Helper::translation(2045,$translate)); ?></a></li>
+              <li><a class="text-secondary" href="<?php echo e(url('/my-profile')); ?>"><?php echo e(Helper::translation(2043,$translate)); ?></a></li>
+              <li><a class="text-secondary" href="<?php echo e(url('/my-purchase')); ?>"><?php echo e(Helper::translation(2044,$translate)); ?></a></li>
+              <li><a class="text-secondary" href="<?php echo e(url('/my-wallet')); ?>"><?php echo e(Helper::translation(2045,$translate)); ?></a></li>
               <?php endif; ?>
               <?php if(Auth::user()->user_type == 'vendor'): ?>
-              <li><a href="<?php echo e(url('/my-profile')); ?>"><?php echo e(Helper::translation(2043,$translate)); ?></a></li>
-              <li><a href="<?php echo e(url('/my-product')); ?>"><?php echo e(Helper::translation(2046,$translate)); ?></a></li>
-              <li><a href="<?php echo e(url('/attribute-type')); ?>"><?php echo e(Helper::translation(1914,$translate)); ?></a></li>
-              <li><a href="<?php echo e(url('/attribute-value')); ?>"><?php echo e(Helper::translation(1921,$translate)); ?></a></li>
-              <li><a href="<?php echo e(url('/my-coupon')); ?>"><?php echo e(Helper::translation(2047,$translate)); ?></a></li>
-              <li><a href="<?php echo e(url('/my-orders')); ?>"><?php echo e(Helper::translation(2026,$translate)); ?></a></li>
-              <li><a href="<?php echo e(url('/my-purchase')); ?>"><?php echo e(Helper::translation(2044,$translate)); ?></a></li>
-              <li><a href="<?php echo e(url('/my-wallet')); ?>"><?php echo e(Helper::translation(2045,$translate)); ?></a></li>
+              <li><a class="text-secondary" href="<?php echo e(url('/my-profile')); ?>"><?php echo e(Helper::translation(2043,$translate)); ?></a></li>
+              <li><a class="text-secondary" href="<?php echo e(url('/my-product')); ?>"><?php echo e(Helper::translation(2046,$translate)); ?></a></li>
+              <li><a class="text-secondary" href="<?php echo e(url('/attribute-type')); ?>"><?php echo e(Helper::translation(1914,$translate)); ?></a></li>
+              <li><a class="text-secondary" href="<?php echo e(url('/attribute-value')); ?>"><?php echo e(Helper::translation(1921,$translate)); ?></a></li>
+              <li><a class="text-secondary" href="<?php echo e(url('/my-coupon')); ?>"><?php echo e(Helper::translation(2047,$translate)); ?></a></li>
+              <li><a class="text-secondary" href="<?php echo e(url('/my-orders')); ?>"><?php echo e(Helper::translation(2026,$translate)); ?></a></li>
+              <li><a class="text-secondary" href="<?php echo e(url('/my-purchase')); ?>"><?php echo e(Helper::translation(2044,$translate)); ?></a></li>
+              <li><a class="text-secondary" href="<?php echo e(url('/my-wallet')); ?>"><?php echo e(Helper::translation(2045,$translate)); ?></a></li>
               <?php endif; ?>
-              <li><a href="<?php echo e(url('/logout')); ?>"><?php echo e(Helper::translation(2048,$translate)); ?></a></li>
+              <li><a class="text-secondary" href="<?php echo e(url('/logout')); ?>"><?php echo e(Helper::translation(2048,$translate)); ?></a></li>
             </ul>
           </li>
           <?php endif; ?>

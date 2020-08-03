@@ -34,7 +34,7 @@
         <h4 class="black mb-2 pb-2">{{ Helper::translation(2056,$translate) }}</h4>
         <div class="owl-carousel owl-theme pt-4 white-box mt-2"align="center">
          @foreach($categorybox['view'] as $category)
-          <div class="pt-1 pb-1 pl-1 pr-1 col-lg-2 col-md-4 col-sm-4" align="center">
+          <div class="p-1 col-5 col-lg-3" align="center">
             <a href="{{ URL::to('/shop/category') }}/{{ $category->category_slug }}" title="{{ $category->category_name }}">
             @if($category->category_image != '')
             <img src="{{ url('/') }}/public/storage/category/{{ $category->category_image }}" alt="{{ $category->category_name }}">
@@ -48,7 +48,7 @@
         </div><!-- /.row -->
       </div>
     @endif
-      
+       
 
       @if(count($physical['product']) != 0) 
        <div class="container pt-3 mt-3 pb-3 mb-3">

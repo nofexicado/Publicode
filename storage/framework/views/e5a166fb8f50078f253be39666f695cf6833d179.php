@@ -34,7 +34,7 @@
         <h4 class="black mb-2 pb-2"><?php echo e(Helper::translation(2056,$translate)); ?></h4>
         <div class="owl-carousel owl-theme pt-4 white-box mt-2"align="center">
          <?php $__currentLoopData = $categorybox['view']; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-          <div class="pt-1 pb-1 pl-1 pr-1 col-lg-2 col-md-4 col-sm-4" align="center">
+          <div class="p-1 col-5 col-lg-3" align="center">
             <a href="<?php echo e(URL::to('/shop/category')); ?>/<?php echo e($category->category_slug); ?>" title="<?php echo e($category->category_name); ?>">
             <?php if($category->category_image != ''): ?>
             <img src="<?php echo e(url('/')); ?>/public/storage/category/<?php echo e($category->category_image); ?>" alt="<?php echo e($category->category_name); ?>">
@@ -48,7 +48,7 @@
         </div><!-- /.row -->
       </div>
     <?php endif; ?>
-      
+       
 
       <?php if(count($physical['product']) != 0): ?> 
        <div class="container pt-3 mt-3 pb-3 mb-3">
